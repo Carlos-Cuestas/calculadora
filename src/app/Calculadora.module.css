@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.input {
+    margin-bottom: 10px;
+}
+
+.input input {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.result {
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.numbers {
+    grid-column: span 3;
+    /* Ocupar 3 columnas del grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Dividir en 3 columnas de igual tamaño */
+    gap: 10px;
+}
+
+.operators {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Dividir en 1 columna */
+    gap: 10px;
+}
